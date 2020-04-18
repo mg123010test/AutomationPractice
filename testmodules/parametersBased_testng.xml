@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="parameters_suite">
+	<parameter name="a" value="20"></parameter>
+	<parameter name="b" value="15"></parameter>
+	<test name="parameters_tests">
+		<!-- <packages> <package name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation"></package> 
+			</packages> </test> -->
+		<classes>
+			<class
+				name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation"></class>
+			<class
+				name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation$Sum"></class>
+			<class
+				name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation$Minus"></class>
+			<class
+				name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation$Multiply"></class>
+		</classes>
+	</test>
+
+	<test name="parameters_test_Fruits">
+		<parameter name="mango" value="mango" />
+		<parameter name="orange" value="orange" />
+		<classes>
+			<class name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation$Fruits" />
+		</classes>
+	</test>
+	<test name="parameters_test_Vegetables">
+		<parameter name="Cauliflower" value="Cauliflower" />
+		<parameter name="Ladyfinger" value="Ladyfinger" />
+		<classes>
+			<class name="com.questglobal.practices.javatpointtestNGExamples.ParameterAnnotation$Vegetables" />
+		</classes>
+	</test>
+</suite>

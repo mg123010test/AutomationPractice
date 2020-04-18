@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RetryFailedTests" verbose="1">
+	<listeners>
+		<!-- <listener class-name="com.questglobal.modules.toolsQAExamples.AnnotationTransformer" /> -->
+		<listener class-name="com.questglobal.modules.toolsQAExamples.AnnotationTransformer2" />
+	</listeners>
+	<test name="RetryMulitple">
+		<classes>
+			<!-- <class name="com.questglobal.modules.toolsQAExamples.RetryFailedTests" /> -->
+			<class name="com.questglobal.modules.toolsQAExamples.RetryFailedTests2" />
+		</classes>
+	</test>
+</suite>
